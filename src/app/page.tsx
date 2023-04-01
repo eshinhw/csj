@@ -1,12 +1,18 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "./page.module.css";
+import TopBar from "@/components/top-bar";
+import MainTopbar from "@/components/main-topbar";
+import TopSections from "@/components/top-sections";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className='text-2xl'>Hello World!</div>
-
-  )
+    <>
+      <TopBar />
+      <MainTopbar />
+      <TopSections />
+    </>
+  );
 }
