@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import TopBar from "@/components/top-bar";
 import MainTopbar from "@/components/main-topbar";
 import TopSections from "@/components/top-sections";
+import Footer from "@/components/footer";
+import BottomNav from "@/components/bottom-nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +15,8 @@ export default function Home() {
       <TopBar />
       <MainTopbar />
       <TopSections />
+      <BottomNav />
+      <Footer />
     </>
   );
 }
