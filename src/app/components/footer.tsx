@@ -12,7 +12,7 @@ export default function Footer() {
           <a>Terms of Sale</a>
         </div>
       </div>
-      <div className="hidden lg:flex flex-row justify-evenly text-xs text-gray-400 border-current border-t-2 mt-5 py-5">
+      <div className="hidden lg:mx-20 xl:mx-40 lg:flex flex-row justify-evenly text-xs text-gray-400 border-current border-t-2 mt-5 py-5">
         <span>© 2023 The Yonge Street Company</span>
         <span>Contact Us</span>
         <span>Accessibility</span>
