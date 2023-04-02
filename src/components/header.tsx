@@ -77,9 +77,6 @@ export default function Header() {
     }
   };
 
-  
-
-  
   return (
     <>
       {/* Mobile Top Bar */}
@@ -108,8 +105,12 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
-          <Link href="/subscribe" className="uppercase border-black">Subscribe</Link>
-          <Link href="/login" className="uppercase">Log In</Link>
+          <Link href="/subscribe" className="uppercase border-black">
+            Subscribe
+          </Link>
+          <Link href="/login" className="uppercase">
+            Log In
+          </Link>
         </div>
       </div>
 
@@ -128,7 +129,6 @@ export default function Header() {
         </div>
         <div>Weather</div>
       </div>
-      
     </>
   );
 }
