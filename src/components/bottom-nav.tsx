@@ -7,11 +7,11 @@ import { TbCooker } from "react-icons/tb";
 export default function BottomNav() {
   return (
     <>
-      <div className="hidden md:text-lg">The Canada Street Journal</div>
-      <div className="hidden md:flex">
+      <div className="hidden lg:my-4 lg:border-solid lg:border-t-2 lg:block lg:text-lg"></div>
+      <div className="hidden lg:flex">
         {/* left section */}
         <div className="w-9/12">
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-around">
             <div>
               <div className="uppercase font-bold">NEWS</div>
               <div className="flex flex-col text-sm">
