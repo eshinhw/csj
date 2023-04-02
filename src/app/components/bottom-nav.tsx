@@ -19,9 +19,9 @@ export default function BottomNav() {
                 <a>World</a>
                 <a>Canada</a>
                 <a>Food</a>
-                <a>Beauty</a>
-                <a>Real Estate</a>
-                <a>Promotion & Deal</a>
+                <a>Health</a>
+                <a>Realty</a>
+                <a>Promotion</a>
               </div>
             </div>
             <div>
