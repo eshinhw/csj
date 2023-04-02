@@ -1,8 +1,8 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'The Canada Street Journal',
-  description: 'Fair and Balanced News in Canada',
+  title: 'The Yonge Street Journal',
+  description: 'Fair and Balanced News in Yonge Street, Canada',
 }
 
 export default function RootLayout({
@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='mx-2 md:mx-40'>
+    <html lang="en" className='mx-2 lg:mx-2'>
       <body>{children}</body>
     </html>
   )
