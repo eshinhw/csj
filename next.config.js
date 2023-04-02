@@ -10,6 +10,10 @@ const nextConfig = {
         hostname: "source.unsplash.com",
         pathname: "/random",
       },
+      {
+        protocol: "https",
+        hostname: "static01.nyt.com",
+      }
     ],
   },
 };
