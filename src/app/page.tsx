@@ -1,14 +1,7 @@
 import React from "react";
-import data from "../../data.json";
 import Image from "next/image";
 import Link from "next/link";
-import { getArticles, getTopStories } from "@/services/articles";
-
-// const handleRoutes = (str:string) => {
-
-//   if
-
-// }
+import { getTopStories } from "@/services/articles";
 
 const header_sections = ["World", "Canada", "Food", "Health", "Realty", "Opinion"];
 
@@ -69,7 +62,11 @@ export default async function HomePage() {
             >
               <div className="flex flex-col justify-center hover:text-gray-500">
                 <Image
-                  src={(article.multimedia.length === 0) ? "https://source.unsplash.com/random" : article.multimedia[0].url}
+                  src={
+                    article.multimedia.length === 0
+                      ? "https://source.unsplash.com/random"
+                      : article.multimedia[0].url
+                  }
                   alt={article.multimedia.caption}
                   width={300}
                   height={300}
