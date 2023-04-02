@@ -80,21 +80,21 @@ export default function Header() {
   return (
     <>
       {/* Mobile Top Bar */}
-      <div className="flex flex-row items-center justify-between my-3 lg:hidden">
-        <GiHamburgerMenu className="w-8 h-8" />
+      <div className="flex flex-row items-center justify-between my-3 mx-2 lg:hidden">
+        <GiHamburgerMenu className="w-4 h-4" />
         <span className="text-xl lg:text-3xl">
           <Link href="/" className={fell_french.className}>
             The Yonge Street Journal
           </Link>
         </span>
-        <FaUser className="w-8 h-8" />
+        <FaUser className="w-4 h-4" />
       </div>
       {/* Mobile Date and Subscribe */}
-      <div className="flex border-solid border-t-2 text-sm justify-between lg:hidden">
-        <div className="">
+      <div className="flex border-solid border-t-2 text-sm justify-between mx-2 lg:hidden">
+        <div className="text-xs py-2">
           {getDay()}, {getMonth()} {now.getDate()}, {now.getFullYear()}
         </div>
-        <a className="">Subsribe</a>
+        <a className="text-xs py-2">Subsribe</a>
       </div>
 
       {/* Laptop Top Bar */}
