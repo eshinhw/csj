@@ -41,7 +41,7 @@ export async function getArticles(section: string) {
 
 export async function getTopStories() {
   const res = await fetch(
-    `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.NYT_API}`
+    `https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=${process.env.NYT_API}`
   );
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
