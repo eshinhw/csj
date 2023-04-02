@@ -35,8 +35,6 @@ export default function BottomNav() {
             <div>
               <div className="uppercase font-bold">ARTS</div>
               <div className="flex flex-col text-sm">
-                <a>Today's Arts</a>
-      
                 <a>Books</a>
                 <a>Music</a>
                 <a>Movies</a>
