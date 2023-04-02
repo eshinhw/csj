@@ -6,14 +6,43 @@ import { getArticles, getTopStories } from "@/services/articles";
 
 // const handleRoutes = (str:string) => {
 
-//   if 
+//   if
 
 // }
 
 const header_sections = ["World", "Canada", "Food", "Health", "Realty", "Opinion"];
 
+const topics = [
+  "arts",
+  "automobiles",
+  "books",
+  "business",
+  "fashion",
+  "food",
+  "health",
+  "home",
+  "insider",
+  "magazine",
+  "movies",
+  "nyregion",
+  "obituaries",
+  "opinion",
+  "politics",
+  "realestate",
+  "science",
+  "sports",
+  "sundayreview",
+  "technology",
+  "theater",
+  "t-magazine",
+  "travel",
+  "upshot",
+  "us",
+  "world",
+];
+
 export default async function HomePage() {
-  const topStories = await getTopStories();
+  const topStories = await getTopStories(topics[Math.floor(Math.random() * topics.length)]);
 
   return (
     <>
@@ -40,7 +69,7 @@ export default async function HomePage() {
             >
               <div className="flex flex-col justify-center hover:text-gray-500">
                 <Image
-                  src={article.multimedia[0].url}
+                  src={(article.multimedia.length === 0) ? "https://source.unsplash.com/random" : article.multimedia[0].url}
                   alt={article.multimedia.caption}
                   width={300}
                   height={300}

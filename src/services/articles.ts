@@ -19,9 +19,9 @@ export async function getArticles(section: string) {
   // }
 
   if (section === "canada") {
-    section = "us"
+    section = "us";
   } else if (section === "realty") {
-    section = "realestate"
+    section = "realestate";
   }
 
   const res = await fetch(
@@ -39,9 +39,10 @@ export async function getArticles(section: string) {
   return res.json();
 }
 
-export async function getTopStories() {
+export async function getTopStories(topic:string) {
+  
   const res = await fetch(
-    `https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=${process.env.NYT_API}`
+    `https://api.nytimes.com/svc/topstories/v2/${topic}.json?api-key=${process.env.NYT_API}`
   );
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
