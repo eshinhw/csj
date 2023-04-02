@@ -1,10 +1,14 @@
 import React from "react";
+import { TbTruckDelivery } from "react-icons/tb";
+import { BiMailSend } from "react-icons/bi";
+import { TbDeviceGamepad2 } from "react-icons/tb";
+import { TbCooker } from "react-icons/tb";
 
 export default function BottomNav() {
   return (
     <>
-      <div className="text-lg">The Canada Street Journal</div>
-      <div className="flex">
+      <div className="hidden md:text-lg">The Canada Street Journal</div>
+      <div className="hidden md:flex">
         {/* left section */}
         <div className="w-9/12">
           <div className="flex flex-row justify-between">
@@ -63,11 +67,23 @@ export default function BottomNav() {
           <div className="flex flex-col">
             <div className="border-double border-b-4">
               <div className="flex flex-col">
-                <div>SUBSCRIBE</div>
-                <a>Home Delivery</a>
-                <a>Digital Subscriptions</a>
-                <a>Games</a>
-                <a>Cooking</a>
+                <div className="font-bold">SUBSCRIBE</div>
+                <div className="flex items-center gap-2">
+                  <TbTruckDelivery />
+                  <a>Home Delivery</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <BiMailSend />
+                  <a>Digital Subscriptions</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <TbDeviceGamepad2 />
+                  <a>Games</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <TbCooker />
+                  <a>Cooking</a>
+                </div>
               </div>
             </div>
             <div className="flex flex-col">
