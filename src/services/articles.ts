@@ -1,23 +1,31 @@
-const sections = ["world", "canada", "food", "beauty", "realty", "opinion"];
+const sections = ["canada", "beauty", "realty"];
 
 export async function getArticles(section: string) {
-  let specified: string = "";
-  switch (section) {
-    case "world":
-      specified = section;
-    case "canada":
-      specified = "us";
-    case "food":
-      specified = section;
-    case "beauty":
-      specified = "health";
-    case "realty":
-      specified = "realestate";
-    case "opinion":
-      specified = section;
+  // switch (section) {
+  //   case "canada":
+  //     res = await fetch(
+  //       `https://api.nytimes.com/svc/topstories/v2/us.json?api-key=${process.env.NYT_API}`
+  //     );
+  //   case "beauty":
+  //     res = await fetch(
+  //       `https://api.nytimes.com/svc/topstories/v2/health.json?api-key=${process.env.NYT_API}`
+  //     );
+  //   case "realty":
+  //     res = await fetch(
+  //       `https://api.nytimes.com/svc/topstories/v2/realestate.json?api-key=${process.env.NYT_API}`
+  //     );
+  //   default:
+
+  // }
+
+  if (section === "canada") {
+    section = "us"
+  } else if (section === "realty") {
+    section = "realestate"
   }
+
   const res = await fetch(
-    `https://api.nytimes.com/svc/topstories/v2/${specified}.json?api-key=${process.env.NYT_API}`
+    `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${process.env.NYT_API}`
   );
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.

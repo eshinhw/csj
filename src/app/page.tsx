@@ -4,7 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { getArticles, getTopStories } from "@/services/articles";
 
-const header_sections = ["World", "Canada", "Food", "Beauty", "Realty", "Opinion"];
+// const handleRoutes = (str:string) => {
+
+//   if 
+
+// }
+
+const header_sections = ["World", "Canada", "Food", "Health", "Realty", "Opinion"];
 
 export default async function HomePage() {
   const topStories = await getTopStories();
