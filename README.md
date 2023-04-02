@@ -1,3 +1,17 @@
+# The Yonge Street Journal
+
+## Tech Stack
+
+- React
+- Next.js
+- Tailwind CSS
+
+## External APIs
+
+- Free Weather API
+- NYTimes API
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
