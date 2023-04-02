@@ -108,8 +108,8 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
-          <button className="uppercase border-black">Subscribe</button>
-          <button className="uppercase">Log In</button>
+          <Link href="/subscribe" className="uppercase border-black">Subscribe</Link>
+          <Link href="/login" className="uppercase">Log In</Link>
         </div>
       </div>
 
