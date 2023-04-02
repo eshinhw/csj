@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import TopBar from "@/components/top-bar";
-import MainTopbar from "@/components/main-topbar";
+
 import TopSections from "@/components/top-sections";
 import Footer from "@/components/footer";
 import BottomNav from "@/components/bottom-nav";
@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <>
       <TopBar />
-      <MainTopbar />
       <TopSections />
       <BottomNav />
       <Footer />
