@@ -30,6 +30,7 @@ export default function BottomNav() {
                 <a>Columnists</a>
                 <a>Editorials</a>
                 <a>Letters</a>
+                <a></a>
               </div>
             </div>
             <div>
