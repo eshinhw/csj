@@ -18,12 +18,10 @@ export default function BottomNav() {
                 <a>Home Page</a>
                 <a>World</a>
                 <a>Canada</a>
-                <a>Toronto</a>
                 <a>Food</a>
                 <a>Beauty</a>
                 <a>Real Estate</a>
-                <a>Marketplace</a>
-                <a>Promo</a>
+                <a>Promotion & Deal</a>
               </div>
             </div>
             <div>
