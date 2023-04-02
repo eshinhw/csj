@@ -3,30 +3,20 @@ import React from "react";
 export default function TopSections() {
   return (
     <>
-      <div className="hidden lg:mx-5">
-        <div className="flex flex-row gap-3 justify-center text-xs my-3">
-          <a>World</a>
-          <a>U.S.</a>
-          <a>Politics</a>
-          <a>Business</a>
-          <a>Opinion</a>
-          <a>Science</a>
-          <a>Health</a>
-          <a>Sports</a>
-          <a>Arts</a>
-          <a>Books</a>
-          <a>Style</a>
-          <a>Food</a>
-          <a>Travel</a>
-          <a>Magazine</a>
-          <a>Real Estate</a>
-          <a>Cooking</a>
-          <a>The Athletic</a>
-          <a>Wirecutter</a>
-          <a>Games</a>
+      <div className="lg:mx-40">
+        <div className="hidden lg:flex flex-row gap-8 justify-center text-xs my-3">
+          <a className="cursor-pointer">World</a>
+          <a className="cursor-pointer">Canada</a>
+          <a className="cursor-pointer">Toronto</a>
+          <a className="cursor-pointer">Food</a>
+          <a className="cursor-pointer">Beauty</a>
+          <a className="cursor-pointer">Real Estate</a>
+          <a className="cursor-pointer">Marketplace</a>
+          <a className="cursor-pointer">Hot Deals</a>
+          <a className="cursor-pointer">Opinion</a>
         </div>
+        <div className="border-double border-t-8"></div>
       </div>
-      <div className="border-double border-t-8"></div>
     </>
   );
 }
