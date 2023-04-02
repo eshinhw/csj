@@ -3,7 +3,7 @@ import React from "react";
 export default function TopSections() {
   return (
     <>
-      <div className="mx-5">
+      <div className="hidden lg:mx-5">
         <div className="flex flex-row gap-3 justify-center text-xs my-3">
           <a>World</a>
           <a>U.S.</a>
