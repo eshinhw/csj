@@ -48,17 +48,15 @@ export default function SubscribePage() {
               </div>
             </fieldset>
             <button className="bg-black text-white p-2 w-full mt-5">Subscribe Now</button>
-            <div className="flex flex-col justify-center mt-5">
-              <p>hello</p>
-              <p>why?</p>
-              {/* <img src={VISAIcon} alt="visa" />
-              <img src={MasterCardIcon} alt="mastercard" />
-              <img src={AmexIcon} alt="amex" />
-              <img src={StripeIcon} alt="stripe" />
-              <img src={GooglePayIcon} alt="googlepay" />
-              <img src={ApplePayIcon} alt="applepay" /> */}
+            <div className="flex flex-row justify-center mt-5 gap-10">
+              <Image src={VISAIcon} alt="visa" className="w-7" />
+              <Image src={MasterCardIcon} alt="mastercard" className="w-7" />
+              <Image src={AmexIcon} alt="amex" className="w-7" />
+              <Image src={StripeIcon} alt="stripe" className="w-7" />
+              <Image src={GooglePayIcon} alt="googlepay" className="w-7" />
+              <Image src={ApplePayIcon} alt="applepay" className="w-7" />
             </div>
-            <p className="mt-3 text-sm text-center">Cancel or pause anytime.</p>
+            <p className="mt-5 text-sm text-center">Cancel or pause anytime.</p>
           </div>
 
           <p className="text-xs mt-10 text-gray-500 mx-4 my-3 ">
