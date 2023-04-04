@@ -6,7 +6,7 @@ import { FaApple } from "react-icons/fa";
 export default function LoginPage() {
   return (
     <>
-      <div className="flex flex-col mx-[40rem]">
+      <div className="flex flex-col md:mx-[20rem] lg:mx-[40rem]">
         <h1 className="text-3xl my-3 text-center">Log in or create an account</h1>
         <h3 className="">Email Address</h3>
         <input type="text" className="border-solid border-black border-2 p-3 my-5" />
