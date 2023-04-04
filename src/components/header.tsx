@@ -87,7 +87,7 @@ export default function Header() {
             The Yonge Street Journal
           </Link>
         </span>
-        <FaUser className="w-4 h-4" />
+        <FaUser className="w-4 h-4" href="/login"/>
       </div>
       {/* Mobile Date and Subscribe */}
       <div className="flex border-solid border-t-2 text-sm justify-between mx-2 lg:hidden">
