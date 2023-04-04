@@ -94,7 +94,7 @@ export default function Header() {
         <div className="text-xs py-2">
           {getDay()}, {getMonth()} {now.getDate()}, {now.getFullYear()}
         </div>
-        <a className="text-xs py-2">Subsribe</a>
+        <Link href="/subscribe" className="text-xs py-2">Subsribe</Link>
       </div>
 
       {/* Laptop Top Bar */}
