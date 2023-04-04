@@ -12,7 +12,7 @@ const fell_french = IM_Fell_French_Canon_SC({
 export default function LoginPage() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center min-w-[25rem] mx-10">
+      <div className="flex flex-col justify-center items-center mx-16">
         <header className="text-center text-2xl my-5">
           <h1 className={fell_french.className}>The Yonge Street Journal</h1>
         </header>
