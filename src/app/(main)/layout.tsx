@@ -12,7 +12,7 @@ const work_sans = Work_Sans({
 
 export const metadata = {
   title: "The Yonge Street Journal",
-  description: "Fair and Balanced News in Yonge Street, Canada",
+  description: "Fair and Balanced News in Canada",
 };
 
 const header_sections = ["World", "Canada", "Food", "Health", "Realty", "Opinion"];
