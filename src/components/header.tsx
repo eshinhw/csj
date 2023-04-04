@@ -87,14 +87,18 @@ export default function Header() {
             The Yonge Street Journal
           </Link>
         </span>
-        <FaUser className="w-4 h-4" href="/login"/>
+        <Link href="/login">
+          <FaUser className="w-4 h-4" />
+        </Link>
       </div>
       {/* Mobile Date and Subscribe */}
       <div className="flex border-solid border-t-2 text-sm justify-between mx-2 lg:hidden">
         <div className="text-xs py-2">
           {getDay()}, {getMonth()} {now.getDate()}, {now.getFullYear()}
         </div>
-        <Link href="/subscribe" className="text-xs py-2">Subsribe</Link>
+        <Link href="/subscribe" className="text-xs py-2">
+          Subsribe
+        </Link>
       </div>
 
       {/* Laptop Top Bar */}
