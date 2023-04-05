@@ -1,3 +1,5 @@
+"use client";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { DM_Serif_Display } from "next/font/google";
 import { IM_Fell_French_Canon_SC } from "next/font/google";
@@ -5,6 +7,8 @@ import { IM_Fell_Double_Pica_SC } from "next/font/google";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import { FaUser } from "react-icons/fa";
 import Link from "next/link";
+import SearchBar from "./search-bar";
+import { useState } from "react";
 
 const serif_display = DM_Serif_Display({
   weight: "400",
@@ -25,6 +29,16 @@ const double_pica = IM_Fell_Double_Pica_SC({
 });
 
 export default function Header() {
+  const [showSearchBar, setShowSearchBar] = useState(false);
+
+  const handleSearch = () => {
+    let search:HTMLElement = document.getElementById("search__bar")!;
+    if (search?.style.display === "none") {
+      search.style.display = "block";
+    } else {
+      search.style.display = "none";
+    }
+  };
   const now = new Date();
   const getDay = () => {
     switch (now.getDay()) {
@@ -105,7 +119,10 @@ export default function Header() {
       <div className="hidden my-5 lg:mx-20 xl:mx-40 lg:flex flex-row items-center justify-between">
         <div className="flex flex-row gap-5 justify-center">
           <GiHamburgerMenu className="w-6 h-6 cursor-pointer" />
-          <RxMagnifyingGlass className="w-6 h-6 cursor-pointer" />
+          <RxMagnifyingGlass className="w-6 h-6 cursor-pointer" onClick={handleSearch} />
+          <div id="search__bar">
+            <SearchBar />
+          </div>
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
