@@ -12,22 +12,6 @@ export type Props = {
   };
 };
 
-const convertToTitle = (str: string) => {
-  if (str.includes("_")) {
-    // replace _ to an empty space
-    str = str.replace("_", " ");
-    // "real estate" to "Real Estate"
-    str =
-      str.charAt(0).toUpperCase() +
-      str.slice(1, str.indexOf(" ") + 1) +
-      str.charAt(str.indexOf(" ") + 1).toUpperCase() +
-      str.slice(str.indexOf(" ") + 2);
-    return str;
-  } else {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
-};
-
 export default async function page({ params }: Props) {
   const articles = await getArticlesByCategory(params.page);
   return (
