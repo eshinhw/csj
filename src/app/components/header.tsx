@@ -31,14 +31,16 @@ const double_pica = IM_Fell_Double_Pica_SC({
 export default function Header() {
   const [showSearchBar, setShowSearchBar] = useState(false);
 
-  const handleSearch = () => {
-    let search:HTMLElement = document.getElementById("search__bar")!;
-    if (search?.style.display === "none") {
-      search.style.display = "block";
-    } else {
-      search.style.display = "none";
-    }
-  };
+  // const handleSearch = () => {
+  //   let search: HTMLElement = document.getElementById("search__bar")!;
+  //   if (search?.style.display === "none") {
+  //     search.style.display = "block";
+  //     setShowSearchBar(true);
+  //   } else {
+  //     search.style.display = "none";
+  //     setShowSearchBar(false);
+  //   }
+  // };
   const now = new Date();
   const getDay = () => {
     switch (now.getDay()) {
@@ -117,12 +119,13 @@ export default function Header() {
 
       {/* Laptop Top Bar */}
       <div className="hidden my-5 lg:mx-20 xl:mx-40 lg:flex flex-row items-center justify-between">
-        <div className="flex flex-row gap-5 justify-center">
+        <div className="flex flex-row gap-4 justify-center items-center">
           <GiHamburgerMenu className="w-6 h-6 cursor-pointer" />
-          <RxMagnifyingGlass className="w-6 h-6 cursor-pointer" onClick={handleSearch} />
-          <div id="search__bar">
-            <SearchBar />
-          </div>
+          <RxMagnifyingGlass
+            className="w-6 h-6 cursor-pointer"
+            onClick={() => setShowSearchBar(!showSearchBar)}
+          />
+          {showSearchBar ? <SearchBar /> : <></>}
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
