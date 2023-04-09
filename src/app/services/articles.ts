@@ -58,11 +58,12 @@ export async function getTopStories(topic: string) {
 }
 
 export type Article = {
+  id: number;
   title: string;
   description: string;
   date: Date;
   category: string;
-  id: number;
+  path: string,
   featured: boolean;
 };
 
@@ -77,6 +78,6 @@ export function getNonFeaturedArticles() {
 export async function getLocalArticles() {
   const filePath = path.join(process.cwd(), "data", "articles.json");
   return readFile(filePath, "utf-8")
-    .then<Article[]>(JSON.parse)
-    .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
+    .then<Article[]>(data => JSON.parse(data))
+    .then((articles) => articles.sort((a, b) => (a.date > b.date ? -1 : 1)));
 }
