@@ -13,7 +13,7 @@ export default function ArticleCard({
   return (
     // make a card component with tailwind css
     <article className="rounded-md overflow-hidden shadow-md hover:shadow-2xl">
-      <Link href={`/articles/${id}`}>
+      <Link href={`/${category}/${title}`}>
         <Image src={`/images/thumbnails/${path}`} alt="dp" width={300} height={300} className="w-full h-40 max-h-40 object-fill"/>
         <div className="flex flex-col items-center p-4">
           <time className="self-end text-gray-700">{date.toString()}</time>
