@@ -1,5 +1,4 @@
 {
-  "categories": [],
   "articles": [
     {
       "title": "A Surprise Accusation Bolsters a Risky Case Against Trump",
@@ -37,7 +36,7 @@
       "title": "Medical students' interest in being family doctors on decline even as provinces boost training spots",
       "description": "Universities trying to make primary care more attractive",
       "date": "2023-04-05",
-      "category": "money",
+      "category": "finance",
       "id": 5,
       "featured": false
     },
