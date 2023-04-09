@@ -75,6 +75,10 @@ export function getNonFeaturedArticles() {
   return getLocalArticles().then((articles) => articles.filter(article => !article.featured))
 }
 
+export function getArticlesByCategory(category: string) {
+  return getLocalArticles().then((articles) => articles.filter(article => article.category === category))
+}
+
 export async function getLocalArticles() {
   const filePath = path.join(process.cwd(), "data", "articles.json");
   return readFile(filePath, "utf-8")
