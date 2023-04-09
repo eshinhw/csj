@@ -1,3 +1,6 @@
+import { readFile } from "fs/promises";
+import path from "path";
+
 const sections = ["canada", "beauty", "realty"];
 
 export async function getArticles(section: string) {
@@ -15,7 +18,6 @@ export async function getArticles(section: string) {
   //       `https://api.nytimes.com/svc/topstories/v2/realestate.json?api-key=${process.env.NYT_API}`
   //     );
   //   default:
-
   // }
 
   if (section === "canada") {
@@ -39,8 +41,7 @@ export async function getArticles(section: string) {
   return res.json();
 }
 
-export async function getTopStories(topic:string) {
-  
+export async function getTopStories(topic: string) {
   const res = await fetch(
     `https://api.nytimes.com/svc/topstories/v2/${topic}.json?api-key=${process.env.NYT_API}`
   );
@@ -54,4 +55,20 @@ export async function getTopStories(topic:string) {
   }
 
   return res.json();
+}
+
+export type Article = {
+  title: string;
+  description: string;
+  date: Date;
+  category: string;
+  id: number;
+  featured: boolean;
+};
+
+export async function getLocalArticles() {
+  const filePath = path.join(process.cwd(), "data", "articles.json");
+  return readFile(filePath, "utf-8")
+    .then<Article[]>(JSON.parse)
+    .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 }
