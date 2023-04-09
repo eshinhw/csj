@@ -1,5 +1,5 @@
-import { getArticles } from "@/services/articles";
-import { getSectionData } from "@/services/sections";
+import { getArticles } from "@/app/services/articles";
+import { getSectionData } from "@/app/services/sections";
 import Image from "next/image";
 import React from "react";
 

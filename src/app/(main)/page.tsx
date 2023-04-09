@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { getTopStories } from "@/services/articles";
+import { getLocalArticles, getTopStories } from "@/app/services/articles";
+import FeaturedArticles from "../components/featured-articles";
+import CarouselArticles from "../components/carousel";
 
 const topics = [
   "arts",
@@ -32,12 +34,16 @@ const topics = [
 ];
 
 export default async function HomePage() {
-  const topStories = await getTopStories(topics[Math.floor(Math.random() * topics.length)]);
+  // const topStories = await getTopStories(topics[Math.floor(Math.random() * topics.length)]);
 
   return (
     <>
+      {/* @ts-expect-error Async Server Component */}
+      <FeaturedArticles />
+      {/* @ts-expect-error Async Server Component */}
+      <CarouselArticles />
       {/* Top Stories */}
-      <div>
+      {/* <div>
         <h1 className="text-xl font-bold py-2 mx-2 cursor-default lg:text-3xl lg:mx-40">
           Top Stories
         </h1>
@@ -69,7 +75,7 @@ export default async function HomePage() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

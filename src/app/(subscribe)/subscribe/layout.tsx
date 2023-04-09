@@ -1,6 +1,6 @@
-import BottomNav from "@/components/bottom-nav";
+import BottomNav from "@/app/components/bottom-nav";
 import "../../globals.css";
-import Footer from "@/components/footer";
+import Footer from "@/app/components/footer";
 
 export const metadata = {
   title: "The Yonge Street Journal",
