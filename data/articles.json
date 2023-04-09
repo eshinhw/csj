@@ -1,52 +1,56 @@
-{
-  "articles": [
-    {
-      "title": "A Surprise Accusation Bolsters a Risky Case Against Trump",
-      "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
-      "date": "2023-01-25",
-      "category": "world",
-      "id": 1,
-      "featured": true
-    },
-    {
-      "title": "'I miss motherhood, but I also fear it': Author grapples with having kids again after death of daughters",
-      "description": "'Parenthood is over for me. Or is it?' writes Clare McBride, whose daughters were killed by an impaired driver",
-      "date": "2022-01-20",
-      "category": "business",
-      "id": 2,
-      "featured": true
-    },
-    {
-      "title": "These Democrats could lose their jobs for joining gun control protest at Tennessee Capitol",
-      "description": "3 state reps accused of 'disorderly behaviour' after leading crowd in chants following Nashville shooting",
-      "date": "2023-04-04",
-      "category": "sports",
-      "id": 3,
-      "featured": true
-    },
-    {
-      "title": "Loblaws gave Galen Weston a $3M raise last year, filings show",
-      "description": "Total compensation increased after outside consultants determined it was too low",
-      "date": "2023-04-05",
-      "category": "health",
-      "id": 4,
-      "featured": false
-    },
-    {
-      "title": "Medical students' interest in being family doctors on decline even as provinces boost training spots",
-      "description": "Universities trying to make primary care more attractive",
-      "date": "2023-04-05",
-      "category": "finance",
-      "id": 5,
-      "featured": false
-    },
-    {
-      "title": "Ben Affleck's Air ties a bow on how Nike cashed in on Michael Jordan",
-      "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
-      "date": "2023-04-05",
-      "category": "culture",
-      "id": 6,
-      "featured": true
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "title": "A Surprise Accusation Bolsters a Risky Case Against Trump",
+    "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
+    "date": "2023-01-25",
+    "category": "world",
+    "path": "a1.jpg",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "'I miss motherhood, but I also fear it': Author grapples with having kids again after death of daughters",
+    "description": "'Parenthood is over for me. Or is it?' writes Clare McBride, whose daughters were killed by an impaired driver",
+    "date": "2022-01-20",
+    "category": "business",
+    "path": "a2.jpg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "These Democrats could lose their jobs for joining gun control protest at Tennessee Capitol",
+    "description": "3 state reps accused of 'disorderly behaviour' after leading crowd in chants following Nashville shooting",
+    "date": "2023-04-04",
+    "category": "sports",
+    "path": "a3.jpg",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Loblaws gave Galen Weston a $3M raise last year, filings show",
+    "description": "Total compensation increased after outside consultants determined it was too low",
+    "date": "2023-04-05",
+    "category": "health",
+    "path": "a4.jpg",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Medical students' interest in being family doctors on decline even as provinces boost training spots",
+    "description": "Universities trying to make primary care more attractive",
+    "date": "2023-04-05",
+    "category": "finance",
+    "path": "a5.jpg",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Ben Affleck's Air ties a bow on how Nike cashed in on Michael Jordan",
+    "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
+    "date": "2023-04-05",
+    "category": "culture",
+    "path": "a6.jpg",
+    "featured": true
+  }
+]
