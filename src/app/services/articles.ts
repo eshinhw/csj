@@ -66,6 +66,14 @@ export type Article = {
   featured: boolean;
 };
 
+export function getFeaturedArticles() {
+  return getLocalArticles().then((articles) => articles.filter(article => article.featured))
+}
+
+export function getNonFeaturedArticles() {
+  return getLocalArticles().then((articles) => articles.filter(article => !article.featured))
+}
+
 export async function getLocalArticles() {
   const filePath = path.join(process.cwd(), "data", "articles.json");
   return readFile(filePath, "utf-8")
