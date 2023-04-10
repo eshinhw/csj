@@ -5,7 +5,8 @@
     "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
     "date": "2023-01-25",
     "category": "world",
-    "path": "a1.jpg",
+    "image": "a1.jpg",
+    "path": "article1",
     "featured": true
   },
   {
@@ -14,7 +15,8 @@
     "description": "'Parenthood is over for me. Or is it?' writes Clare McBride, whose daughters were killed by an impaired driver",
     "date": "2022-01-20",
     "category": "business",
-    "path": "a2.jpg",
+    "image": "a2.jpg",
+    "path": "article2",
     "featured": true
   },
   {
@@ -23,7 +25,8 @@
     "description": "3 state reps accused of 'disorderly behaviour' after leading crowd in chants following Nashville shooting",
     "date": "2023-04-04",
     "category": "sports",
-    "path": "a3.jpg",
+    "image": "a3.jpg",
+    "path": "article3",
     "featured": true
   },
   {
@@ -32,7 +35,8 @@
     "description": "Total compensation increased after outside consultants determined it was too low",
     "date": "2023-04-05",
     "category": "health",
-    "path": "a4.jpg",
+    "image": "a4.jpg",
+    "path": "article4",
     "featured": false
   },
   {
@@ -41,7 +45,8 @@
     "description": "Universities trying to make primary care more attractive",
     "date": "2023-04-05",
     "category": "finance",
-    "path": "a5.jpg",
+    "image": "a5.jpg",
+    "path": "article5",
     "featured": false
   },
   {
@@ -50,7 +55,8 @@
     "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
     "date": "2023-04-05",
     "category": "culture",
-    "path": "a6.jpg",
+    "image": "a6.jpg",
+    "path": "article6",
     "featured": true
   }
 ]
