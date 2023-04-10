@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "title": "A Surprise Accusation Bolsters a Risky Case Against Trump",
-    "description": "Matt and Ben are back on screen in film about how shoe company changed the game",
+    "title": "U.S. scrambles to find source of highly-classified intelligence leak",
+    "description": "Info posted online ranged from Ukraine's air defences to Israel's Mossad spy agency",
     "date": "2023-01-25",
     "category": "world",
-    "image": "a1.jpg",
-    "path": "article1",
+    "image": "world1.jpg",
+    "articleName": "world1",
     "featured": true
   },
   {
     "id": 2,
-    "title": "'I miss motherhood, but I also fear it': Author grapples with having kids again after death of daughters",
-    "description": "'Parenthood is over for me. Or is it?' writes Clare McBride, whose daughters were killed by an impaired driver",
+    "title": "'Beer prices are bubbling up from more than taxes",
+    "description": "Breweries are now passing inflationary pressures onto consumers",
     "date": "2022-01-20",
     "category": "business",
-    "image": "a2.jpg",
-    "path": "article2",
+    "image": "business1.jpg",
+    "articleName": "article3",
     "featured": true
   },
   {
     "id": 3,
-    "title": "These Democrats could lose their jobs for joining gun control protest at Tennessee Capitol",
-    "description": "3 state reps accused of 'disorderly behaviour' after leading crowd in chants following Nashville shooting",
+    "title": "Rahm rallies to win Masters by 4 shots over Koepka, Mickelson for 2nd major title",
+    "description": "Spaniard overcomes 4-shot deficit, reclaims world No. 1 ranking from Scheffler",
     "date": "2023-04-04",
     "category": "sports",
-    "image": "a3.jpg",
-    "path": "article3",
+    "image": "sport1.jpg",
+    "articleName": "sport1",
     "featured": true
   },
   {
@@ -36,7 +36,7 @@
     "date": "2023-04-05",
     "category": "health",
     "image": "a4.jpg",
-    "path": "article4",
+    "articleName": "article4",
     "featured": false
   },
   {
@@ -46,7 +46,7 @@
     "date": "2023-04-05",
     "category": "finance",
     "image": "a5.jpg",
-    "path": "article5",
+    "articleName": "article5",
     "featured": false
   },
   {
@@ -56,7 +56,7 @@
     "date": "2023-04-05",
     "category": "culture",
     "image": "a6.jpg",
-    "path": "article6",
+    "articleName": "article6",
     "featured": true
   }
 ]
