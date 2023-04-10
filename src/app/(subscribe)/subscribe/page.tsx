@@ -59,8 +59,8 @@ export default function SubscribePage() {
             <p className="mt-5 text-sm text-center">Cancel or pause anytime.</p>
           </div>
 
-          <p className="text-xs mt-10 text-gray-500 mx-4 my-3 ">
-            Offer for a New York Times All Access subscription; current subscribers not eligible.
+          <p className="text-xs mt-10 text-gray-500 mx-4 my-3 lg:mx-20 xl:mx-40">
+            Offer for The Yonge Street Journal All Access subscription; current subscribers not eligible.
             Subscription excludes print edition. For a monthly subscription, your payment method
             will automatically be charged in advance the introductory offer rate every 4 weeks for 1
             year, and after 1 year the standard rate every 4 weeks. For an annual subscription, your
