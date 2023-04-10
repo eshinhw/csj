@@ -36,11 +36,11 @@ export async function getLocalArticles() {
 }
 
 export async function getArticleData(articleName: string): Promise<ArticleData> {
+  console.log(articleName);
   const filePath = path.join(process.cwd(), "data", "articles", `${articleName}.md`);
-  console.log(filePath)
   const metadata = await getLocalArticles().then(articles => articles.find(article => article.articleName === articleName));
   // if (!metadata) throw new Error(`${articleName} DNE.`)
-
+  
   const content = await readFile(filePath, 'utf-8');
   return {...metadata, content};
 }

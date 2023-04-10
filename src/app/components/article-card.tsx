@@ -3,8 +3,6 @@ import { Article } from "../services/articles";
 import Link from "next/link";
 import Image from "next/image";
 
-import cardImage from "../../../public/images/icons/amex.png";
-
 export default function ArticleCard({
   article: { id, title, description, date, category, image, articleName, featured },
 }: {
