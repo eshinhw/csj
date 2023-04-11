@@ -5,7 +5,9 @@ export type Article = {
   id: number;
   title: string;
   description: string;
+  body: string;
   date: Date;
+  author: string;
   category: string;
   image: string;
   articleName: string;
