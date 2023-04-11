@@ -9,6 +9,7 @@ import { FaUser } from "react-icons/fa";
 import Link from "next/link";
 import SearchBar from "./search-bar";
 import { useState } from "react";
+import Weather from "./weather";
 
 const serif_display = DM_Serif_Display({
   weight: "400",
@@ -58,7 +59,6 @@ export default function Header() {
         return "Friday";
       case 6:
         return "Saturday";
-        return "";
     }
   };
 
@@ -140,18 +140,21 @@ export default function Header() {
 
       {/* Laptop Date, Header, Weather  */}
       <div className="hidden lg:mx-20 xl:mx-40 lg:flex border-b-2 py-10 justify-between items-center">
-        <div className="text-sm">
-          <p>{getDay()}</p>
-          <p>
+        {/* Date */}
+        <div className="text-xs w-18">
+          <p className="font-bold">
             {getMonth()} {now.getDate()}, {now.getFullYear()}
           </p>
+          <p>{getDay()}</p>
         </div>
-        <div className="lg:text-3xl xl:text-6xl cursor-pointer">
+        {/* Title */}
+        <div className="lg:text-3xl xl:text-6xl cursor-pointer text-center">
           <Link href="/" className={fell_french.className}>
             The Yonge Street Journal
           </Link>
         </div>
-        <div>Weather</div>
+        {/* Weather */}
+        <Weather />
       </div>
     </>
   );
