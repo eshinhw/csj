@@ -11,7 +11,9 @@
 - Free Weather API
 - NYTimes API
 
+## Deployment
 
+https://ysj.vercel.app
 
 
 ## Getting Started
