@@ -12,7 +12,7 @@ export type Props = {
 export default async function CategoryPage({ params }: Props) {
   const articles = await getArticlesByCategory(params.category);
   return (
-    <section className="my-4 lg:mx-20 xl:mx-40">
+    <section className="mx-2 my-4 lg:mx-20 xl:mx-40">
       <SectionTitle title={FirstCharUpperCase(params.category)} />
       <ArticleGrid articles={articles} />
     </section>

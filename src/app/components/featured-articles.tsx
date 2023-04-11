@@ -7,7 +7,7 @@ export default async function FeaturedArticles() {
   const featured = await getLocalArticles();
 
   return (
-    <div className="lg:mx-20 xl:mx-40">
+    <div className="mx-2 lg:mx-20 xl:mx-40">
       <SectionTitle title="Featured Articles" />
       <ArticleGrid articles={featured} />
     </div>
