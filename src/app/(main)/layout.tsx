@@ -18,7 +18,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const articles = await getLocalArticles();
-  const categories = [...new Set(articles.map(article => article.category))].sort()
+  const categories = [...new Set(articles.map((article) => article.category))].sort();
   return (
     <html lang="en" className={work_sans.className}>
       <body>
