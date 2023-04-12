@@ -11,19 +11,7 @@ import SearchBar from "./search-bar";
 import { useState } from "react";
 import Weather from "./weather";
 
-const serif_display = DM_Serif_Display({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
 const fell_french = IM_Fell_French_Canon_SC({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const double_pica = IM_Fell_Double_Pica_SC({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
@@ -112,6 +100,9 @@ export default function Header() {
         <div className="text-xs py-2">
           {getDay()}, {getMonth()} {now.getDate()}, {now.getFullYear()}
         </div>
+        <Link href="/write" className="text-xs py-2">
+          Write
+        </Link>
         <Link href="/subscribe" className="text-xs py-2">
           Subsribe
         </Link>
@@ -129,6 +120,9 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
+          <Link href="/write" className="uppercase border-black">
+            Write
+          </Link>
           <Link href="/subscribe" className="uppercase border-black">
             Subscribe
           </Link>
