@@ -1,4 +1,3 @@
-import MarkdownViewer from "@/app/components/markdown-viewer";
 import { getArticleData } from "@/app/services/articles";
 import Image from "next/image";
 
