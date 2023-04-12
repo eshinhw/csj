@@ -11,7 +11,7 @@ export default function ArticleCard({
 }) {
   return (
     // make a card component with tailwind css
-    <article className="rounded-md overflow-hidden shadow-md hover:shadow-2xl">
+    <article className="flex flex-col rounded-md overflow-hidden shadow-md h-full hover:shadow-2xl">
       <Link href={`/${category}/${articleName}`}>
         <Image
           src={`/images/thumbnails/${image}`}
@@ -22,14 +22,16 @@ export default function ArticleCard({
         />
         <div className="flex flex-col items-center p-4">
           <div className="flex gap-2 items-center self-end">
-            <AiTwotoneCalendar className="w-3 h-3"/>
-            <time className="text-gray-700">{date.toString()}</time>
+            <span className="text-sm rounded-lg bg-neutral-300 px-2 my-2">
+              {category.toUpperCase()}
+            </span>
+            <div className="flex items-center gap-1">
+              <AiTwotoneCalendar className="w-3 h-3" />
+              <time className="text-gray-700">{date.toString()}</time>
+            </div>
           </div>
-          <h1 className="font-bold text-xl my-2 w-full truncate">{title}</h1>
-          <p className="w-full text-center truncate">{description}</p>
-          <span className="text-sm rounded-lg bg-neutral-300 px-2 my-2">
-            {category.toUpperCase()}
-          </span>
+          <h1 className="grow font-bold text-xl my-2 w-full">{title}</h1>
+          <p className="italic">{description}</p>
         </div>
       </Link>
     </article>
