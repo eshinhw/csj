@@ -1,6 +1,6 @@
 "use client";
 
-import { Article, getCategories } from "@/app/services/articles";
+import { Article } from "@/app/services/articles";
 import React, { useEffect, useState } from "react";
 
 export default function WritePage() {
