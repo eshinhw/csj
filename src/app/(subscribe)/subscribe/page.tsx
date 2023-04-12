@@ -18,9 +18,6 @@ export default function SubscribePage() {
   return (
     <>
       <div className="flex flex-col">
-        <header className="text-center text-2xl my-5">
-          <h1 className={fell_french.className}>The Yonge Street Journal</h1>
-        </header>
         <div className="mt-10 flex flex-col items-center justify-between mx-2">
           <div className="text-center">
             <h1>All Inclusive Subscription</h1>
@@ -60,14 +57,14 @@ export default function SubscribePage() {
           </div>
 
           <p className="text-xs mt-10 text-gray-500 mx-4 my-3 lg:mx-20 xl:mx-40">
-            Offer for The Yonge Street Journal All Access subscription; current subscribers not eligible.
-            Subscription excludes print edition. For a monthly subscription, your payment method
-            will automatically be charged in advance the introductory offer rate every 4 weeks for 1
-            year, and after 1 year the standard rate every 4 weeks. For an annual subscription, your
-            payment method will automatically be charged in advance the introductory offer rate for
-            1 year, and after 1 year the standard rate once yearly. Your subscription will continue
-            until you cancel. Cancellation takes effect at the end of your current billing period.
-            Taxes may apply. Offer terms are subject to change.
+            Offer for The Yonge Street Journal All Access subscription; current subscribers not
+            eligible. Subscription excludes print edition. For a monthly subscription, your payment
+            method will automatically be charged in advance the introductory offer rate every 4
+            weeks for 1 year, and after 1 year the standard rate every 4 weeks. For an annual
+            subscription, your payment method will automatically be charged in advance the
+            introductory offer rate for 1 year, and after 1 year the standard rate once yearly. Your
+            subscription will continue until you cancel. Cancellation takes effect at the end of
+            your current billing period. Taxes may apply. Offer terms are subject to change.
           </p>
         </div>
       </div>

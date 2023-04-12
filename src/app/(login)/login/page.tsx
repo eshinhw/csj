@@ -13,9 +13,6 @@ export default function LoginPage() {
   return (
     <>
       <div className="flex flex-col justify-center items-center mx-5">
-        <header className="text-center text-2xl my-5">
-          <h1 className={fell_french.className}>The Yonge Street Journal</h1>
-        </header>
         <div className="flex flex-col">
           <h1 className="text-xl my-3 text-center">Log in or create an account</h1>
           <h3 className="text-sm">Email Address</h3>
