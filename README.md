@@ -1,4 +1,19 @@
-# The Yonge Street Journal
+<div align="center">
+
+![Screenshot 2023-04-11 at 7 50 05 PM](https://user-images.githubusercontent.com/41933169/231312493-8d26b262-50ad-4161-8a27-f5bf7bc1f415.png)
+
+</div>
+
+<div align="center">
+
+  ![NPM](https://img.shields.io/npm/l/nextjs)
+  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/eshinhw/ysj)
+  ![GitHub issues](https://img.shields.io/github/issues/eshinhw/ysj)
+  ![GitHub pull requests](https://img.shields.io/github/issues-pr/eshinhw/ysj)
+  
+</div>
+
+An online journal app where users discover stories, ideas and expertise from writers on any topic.
 
 ## Tech Stack
 
@@ -6,13 +21,16 @@
 - Next.js
 - Tailwind CSS
 
-## External APIs
+## Main Features
 
-- Free Weather API
-- NYTimes API
+- User authentication with Google sign-in
+- Subscription payment with Stripe API
+- Live weather display with FreeWeatherAPI
+- Cloud storage with either Google Cloud or AWS
 
+## Deployment
 
-
+The live demo can be found [here](https://ysj.vercel.app).
 
 ## Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). First, run the development server:
