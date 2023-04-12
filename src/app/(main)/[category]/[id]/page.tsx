@@ -2,12 +2,12 @@ import { getArticleData } from "@/app/services/articles";
 import Image from "next/image";
 
 export default async function ArticleContentPage({
-  params: { articleName },
+  params: { id },
 }: {
-  params: { articleName: string };
+  params: { id: string };
 }) {
-  console.log(articleName);
-  const article = await getArticleData(articleName);
+  console.log(id);
+  const article = getArticleData(id);
 
   return (
     <article className="my-3 lg:mx-20 xl:mx-40">

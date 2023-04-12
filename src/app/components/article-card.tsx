@@ -5,14 +5,14 @@ import Image from "next/image";
 import { AiTwotoneCalendar } from "react-icons/ai";
 
 export default function ArticleCard({
-  article: { id, title, description, date, category, image, articleName, featured },
+  article: { id, title, description, date, category, image, featured },
 }: {
   article: Article;
 }) {
   return (
     // make a card component with tailwind css
     <article className="flex flex-col rounded-md overflow-hidden shadow-md h-full hover:shadow-2xl">
-      <Link href={`/${category}/${articleName}`}>
+      <Link href={`/${category}/${id}`}>
         <Image
           src={`/images/thumbnails/${image}`}
           alt="dp"

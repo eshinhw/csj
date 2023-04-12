@@ -1,11 +1,11 @@
 import { getLocalArticles } from "@/app/services/articles";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
-  const articles = await getLocalArticles();
+export function GET(request: Request) {
+  const articles = getLocalArticles();
   return NextResponse.json(articles);
 }
 
-// export async function PUT(request: Request) {
-//   NextRequest.
-// }
+export function POST(request: Request) {
+  return;
+}

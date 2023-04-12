@@ -5,6 +5,11 @@ import React, { useEffect, useState } from "react";
 
 export default function WritePage() {
   const [categories, setCategories] = useState<string[]>([]);
+  const [title, setTitle] = useState("");
+  const [abstract, setAbstract] = useState("");
+  const [author, setAuthor] = useState("");
+  const [content, setContent] = useState("");
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -17,14 +22,23 @@ export default function WritePage() {
     fetchArticles();
   }, []);
 
-  async function postJSON(data: Article) {
+  const submitArticleHandler = async () => {
+    console.log(title);
     try {
       const response = await fetch("/api/articles", {
-        method: "PUT", // or 'PUT'
+        method: "POST", // or 'PUT'
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          title: title,
+          description: abstract,
+          body: content,
+          author: author,
+          category: category,
+          image: "",
+          featured: false,
+        }),
       });
 
       const result = await response.json();
@@ -32,28 +46,10 @@ export default function WritePage() {
     } catch (error) {
       console.error("Error:", error);
     }
-  }
-
-  const clickHandler = () => {
-    const title = (document.getElementsByName("title")[0] as HTMLInputElement).value;
-    const abstract = (document.getElementsByName("abstract")[0] as HTMLInputElement).value;
-    const content = (document.getElementsByName("content")[0] as HTMLInputElement).value;
-    const author = (document.getElementsByName("author")[0] as HTMLInputElement).value;
-    console.log(title);
-    postJSON({
-      id: 9,
-      title: title,
-      description: abstract,
-      body: content,
-      date: new Date(),
-      author: author,
-      category: "abd",
-      image: "",
-      articleName: "adfa",
-      featured: false,
-    });
   };
-  const cancelHandler = () => {};
+  const cancelHandler = () => {
+    window.location.replace("/")
+  };
   return (
     <section>
       {/* Mobile */}
@@ -61,7 +57,7 @@ export default function WritePage() {
         <h1 className="my-5 font-bold">Write an Article</h1>
         <div className="flex my-5">
           <div className="text-right mr-6">Category</div>
-          <select name="cat">
+          <select value={category} onChange={(e) => setCategory(e.target.value)} name="cat">
             {categories.map((cat, idx) => (
               <option key={idx} value={cat}>
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -76,7 +72,10 @@ export default function WritePage() {
           <input type="text" className="border-2 w-full h-12" placeholder="Title" />
           <textarea className="border-2 w-full h-36" placeholder="Content" />
           <div className="flex flex-row justify-evenly">
-            <button className="bg-gray-700 rounded-md p-3 w-1/2 text-white" onClick={clickHandler}>
+            <button
+              className="bg-gray-700 rounded-md p-3 w-1/2 text-white"
+              onClick={submitArticleHandler}
+            >
               Submit
             </button>
             <button className="bg-red-700 rounded-md p-3 w-1/2 text-white" onClick={cancelHandler}>
@@ -101,22 +100,45 @@ export default function WritePage() {
         </div>
         <div className="flex my-4">
           <div className="w-32 text-right mr-6">Title</div>
-          <input type="text" name="title" className="border-2 w-full" />
+          <input
+            type="text"
+            name="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            className="border-2 w-full"
+          />
         </div>
         <div className="flex my-4">
           <div className="w-32 text-right mr-6">Abstract</div>
-          <input type="text" name="abstract" className="border-2 w-full" />
+          <input
+            type="text"
+            name="abstract"
+            value={abstract}
+            onChange={(e) => setAbstract(e.target.value)}
+            className="border-2 w-full"
+          />
         </div>
         <div className="flex my-4">
           <div className="w-32 text-right mr-6">Author</div>
-          <input type="text" name="author" className="border-2 w-full" />
+          <input
+            type="text"
+            name="author"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            className="border-2 w-full"
+          />
         </div>
         <div className="flex my-4">
-          <div className="w-32 text-right mr-6">Text Area</div>
-          <textarea name="content" className="border-2 w-full h-48" />
+          <div className="w-32 text-right mr-6">Content</div>
+          <textarea
+            name="content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            className="border-2 w-full h-48"
+          />
         </div>
         <div className="flex flex-row justify-end gap-5">
-          <button className="bg-gray-700 rounded-md p-5 text-white" onClick={clickHandler}>
+          <button className="bg-gray-700 rounded-md p-5 text-white" onClick={submitArticleHandler}>
             Submit
           </button>
           <button className="bg-red-700 rounded-md p-5 text-white" onClick={cancelHandler}>
