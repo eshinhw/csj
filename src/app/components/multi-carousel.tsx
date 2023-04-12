@@ -2,7 +2,6 @@
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Article } from "../services/articles";
 
 const responsive = {
   desktop: {
