@@ -1,6 +1,6 @@
-import BottomNav from "@/app/components/bottom-nav";
-import "../../globals.css";
 import Footer from "@/app/components/footer";
+import SmallHeader from "@/app/components/small-header";
+import "../../globals.css";
 
 export const metadata = {
   title: "The Yonge Street Journal",
@@ -11,6 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <SmallHeader />
         {children}
         <Footer />
       </body>
