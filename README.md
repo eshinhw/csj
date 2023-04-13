@@ -17,6 +17,7 @@ An online journal app where users discover stories, ideas and expertise from wri
 
 ## Tech Stack
 
+- TypeScript
 - React
 - Next.js
 - Tailwind CSS
