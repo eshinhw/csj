@@ -24,10 +24,10 @@ An online journal app where users discover stories, ideas and expertise from wri
 
 ## Main Features
 
-- User authentication with Google sign-in
-- Subscription payment with Stripe API
-- Live weather display with FreeWeatherAPI
-- Cloud storage with either Google Cloud or AWS
+- User authentication with Google sign-in (Soon to be implemented)
+- Subscription payment with Stripe API (Soon to be implemented)
+- Live weather display with FreeWeatherAPI (Soon to be implemented)
+- Cloud storage with either Google Cloud or AWS (Soon to be implemented)
 
 ## Deployment
 
