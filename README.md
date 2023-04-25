@@ -29,6 +29,10 @@ An online journal app where users discover stories, ideas and expertise from wri
 - Live weather display with FreeWeatherAPI (Soon to be implemented)
 - Cloud storage with either Google Cloud or AWS (Soon to be implemented)
 
+## External Dependencies
+
+- react-hook-form
+
 ## Deployment
 
 The live demo can be found [here](https://ysj.vercel.app).
