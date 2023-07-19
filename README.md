@@ -1,6 +1,6 @@
 <div align="center">
 
-![Screenshot 2023-04-11 at 7 50 05 PM](https://user-images.githubusercontent.com/41933169/231312493-8d26b262-50ad-4161-8a27-f5bf7bc1f415.png)
+![logo](https://user-images.githubusercontent.com/41933169/231312493-8d26b262-50ad-4161-8a27-f5bf7bc1f415.png)
 
 </div>
 
@@ -14,6 +14,12 @@
 </div>
 
 An online journal app where users discover stories, ideas and expertise from writers on any topic.
+
+<div align="center">
+  
+  <img width="1200" alt="main-page" src="https://github.com/eshinhw/ysj/assets/41933169/a7542f9c-d518-4338-8c48-dd9a50fcc6e7">
+
+</div>
 
 ## Tech Stack
 
