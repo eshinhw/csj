@@ -14,9 +14,17 @@ export default async function ArticleContentPage({
       <div className="flex flex-col w-full">
         <h1 className="text-[38px] font-bold mt-2">{article.title}</h1>
         <h3 className="text-[20px] my-2">{article.description}</h3>
-        <span className="my-2">{`${article.author} | Posted: ${article.date.toString()}`}</span>
-        <Image src={`/images/thumbnails/${article.image}`} alt="" width={300} height={300} className="w-full h-64"/>
-        <p className="text-md mt-4">{article.body}</p>
+        <span className="my-2">{`${
+          article.author
+        } | Posted: ${article.date.toString()}`}</span>
+        <Image
+          src={`/images/thumbnails/${article.image}`}
+          alt=""
+          width={300}
+          height={300}
+          className="w-full h-64"
+        />
+        <p className="mt-4 text-md">{article.body}</p>
       </div>
     </article>
   );

@@ -12,25 +12,30 @@ const fell_french = IM_Fell_French_Canon_SC({
 export default function LoginPage() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center mx-5">
+      <div className="flex flex-col items-center justify-center mx-5">
         <div className="flex flex-col">
-          <h1 className="text-xl my-3 text-center">Log in or create an account</h1>
+          <h1 className="my-3 text-xl text-center">
+            Log in or create an account
+          </h1>
           <h3 className="text-sm">Email Address</h3>
-          <input type="text" className="border-solid border-black border-2 p-3 mb-5 mt-2" />
-          <button className="bg-black text-white p-3">Continue</button>
-          <p className="text-center mt-2">or</p>
+          <input
+            type="text"
+            className="p-3 mt-2 mb-5 border-2 border-black border-solid"
+          />
+          <button className="p-3 text-white bg-black">Continue</button>
+          <p className="mt-2 text-center">or</p>
           <p className="text-center">
-            By continuing, you agree to the updated Terms of Sale, Terms of Service, and Privacy
-            Policy.
+            By continuing, you agree to the updated Terms of Sale, Terms of
+            Service, and Privacy Policy.
           </p>
-          <button className="border-solid border-2 border-black my-3">
+          <button className="my-3 border-2 border-black border-solid">
             <div className="flex flex-row items-center justify-center gap-4 my-4">
               {/* <FaGoogle /> */}
               <Image src={GoogleIcon} alt="google" className="w-5" />
               Continue with Google
             </div>
           </button>
-          <button className="border-solid border-2 border-black my-3">
+          <button className="my-3 border-2 border-black border-solid">
             <div className="flex flex-row items-center justify-center gap-4 my-4">
               {/* <FaFacebook /> */}
               <Image src={FacebookIcon} alt="facebook" className="w-5" />

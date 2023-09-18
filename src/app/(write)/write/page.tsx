@@ -15,7 +15,9 @@ export default function WritePage() {
     const fetchArticles = async () => {
       const response = await fetch("/api/articles");
       const articles = await response.json();
-      const categories = [...new Set(articles.map((article: Article) => article.category))].sort();
+      const categories = [
+        ...new Set(articles.map((article: Article) => article.category)),
+      ].sort();
       setCategories(categories as string[]);
     };
 
@@ -48,16 +50,20 @@ export default function WritePage() {
     }
   };
   const cancelHandler = () => {
-    window.location.replace("/")
+    window.location.replace("/");
   };
   return (
     <section>
       {/* Mobile */}
-      <div className="mx-auto max-w-sm flex flex-col justify-center lg:hidden">
+      <div className="flex flex-col justify-center max-w-sm mx-auto lg:hidden">
         <h1 className="my-5 font-bold">Write an Article</h1>
         <div className="flex my-5">
-          <div className="text-right mr-6">Category</div>
-          <select value={category} onChange={(e) => setCategory(e.target.value)} name="cat">
+          <div className="mr-6 text-right">Category</div>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            name="cat"
+          >
             {categories.map((cat, idx) => (
               <option key={idx} value={cat}>
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -66,19 +72,38 @@ export default function WritePage() {
           </select>
         </div>
         <div className="flex flex-col gap-3">
-          <input type="text" className="border-2 w-full h-12" placeholder="Title" />
-          <input type="text" className="border-2 w-full h-12" placeholder="Abstract" />
-          <input type="text" className="border-2 w-full h-12" placeholder="Author" />
-          <input type="text" className="border-2 w-full h-12" placeholder="Title" />
-          <textarea className="border-2 w-full h-36" placeholder="Content" />
+          <input
+            type="text"
+            className="w-full h-12 border-2"
+            placeholder="Title"
+          />
+          <input
+            type="text"
+            className="w-full h-12 border-2"
+            placeholder="Abstract"
+          />
+          <input
+            type="text"
+            className="w-full h-12 border-2"
+            placeholder="Author"
+          />
+          <input
+            type="text"
+            className="w-full h-12 border-2"
+            placeholder="Title"
+          />
+          <textarea className="w-full border-2 h-36" placeholder="Content" />
           <div className="flex flex-row justify-evenly">
             <button
-              className="bg-gray-700 rounded-md p-3 w-1/2 text-white"
+              className="w-1/2 p-3 text-white bg-gray-700 rounded-md"
               onClick={submitArticleHandler}
             >
               Submit
             </button>
-            <button className="bg-red-700 rounded-md p-3 w-1/2 text-white" onClick={cancelHandler}>
+            <button
+              className="w-1/2 p-3 text-white bg-red-700 rounded-md"
+              onClick={cancelHandler}
+            >
               Cancel
             </button>
           </div>
@@ -86,10 +111,10 @@ export default function WritePage() {
       </div>
 
       {/* Laptop */}
-      <div className="hidden lg:block mx-40">
-        <h1 className="font-bold text-xl mb-5">Write an Article</h1>
+      <div className="hidden mx-40 lg:block">
+        <h1 className="mb-5 text-xl font-bold">Write an Article</h1>
         <div className="flex my-5">
-          <div className="w-28 text-right mr-6">Category</div>
+          <div className="mr-6 text-right w-28">Category</div>
           <select name="cat">
             {categories.map((cat, idx) => (
               <option key={idx} value={cat}>
@@ -99,49 +124,55 @@ export default function WritePage() {
           </select>
         </div>
         <div className="flex my-4">
-          <div className="w-32 text-right mr-6">Title</div>
+          <div className="w-32 mr-6 text-right">Title</div>
           <input
             type="text"
             name="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="border-2 w-full"
+            className="w-full border-2"
           />
         </div>
         <div className="flex my-4">
-          <div className="w-32 text-right mr-6">Abstract</div>
+          <div className="w-32 mr-6 text-right">Abstract</div>
           <input
             type="text"
             name="abstract"
             value={abstract}
             onChange={(e) => setAbstract(e.target.value)}
-            className="border-2 w-full"
+            className="w-full border-2"
           />
         </div>
         <div className="flex my-4">
-          <div className="w-32 text-right mr-6">Author</div>
+          <div className="w-32 mr-6 text-right">Author</div>
           <input
             type="text"
             name="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-            className="border-2 w-full"
+            className="w-full border-2"
           />
         </div>
         <div className="flex my-4">
-          <div className="w-32 text-right mr-6">Content</div>
+          <div className="w-32 mr-6 text-right">Content</div>
           <textarea
             name="content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="border-2 w-full h-48"
+            className="w-full h-48 border-2"
           />
         </div>
         <div className="flex flex-row justify-end gap-5">
-          <button className="bg-gray-700 rounded-md p-5 text-white" onClick={submitArticleHandler}>
+          <button
+            className="p-5 text-white bg-gray-700 rounded-md"
+            onClick={submitArticleHandler}
+          >
             Submit
           </button>
-          <button className="bg-red-700 rounded-md p-5 text-white" onClick={cancelHandler}>
+          <button
+            className="p-5 text-white bg-red-700 rounded-md"
+            onClick={cancelHandler}
+          >
             Cancel
           </button>
         </div>

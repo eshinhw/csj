@@ -18,7 +18,7 @@ export default function SubscribePage() {
   return (
     <>
       <div className="flex flex-col">
-        <div className="mt-10 flex flex-col items-center justify-between mx-2">
+        <div className="flex flex-col items-center justify-between mx-2 mt-10">
           <div className="text-center">
             <h1>All Inclusive Subscription</h1>
             <p>Now Extended.</p>
@@ -28,24 +28,30 @@ export default function SubscribePage() {
           <div className="flex flex-col border-t-2 my-3 min-w-[10rem] md:w-[30rem] lg:w-[35rem]">
             <fieldset>
               {/* weekly */}
-              <div className="flex flex-row gap-4 border-b-2 py-2">
+              <div className="flex flex-row gap-4 py-2 border-b-2">
                 <input type="radio" className="" name="subscribe" />
                 <div className="text-xs">
                   <p>$0.50 Cdn/week</p>
-                  <p className="text-gray-500">Billed every 4 weeks for the first year</p>
+                  <p className="text-gray-500">
+                    Billed every 4 weeks for the first year
+                  </p>
                 </div>
               </div>
               {/* yearly */}
-              <div className="flex flex-row gap-4 border-b-2 py-2">
+              <div className="flex flex-row gap-4 py-2 border-b-2">
                 <input type="radio" className="" name="subscribe" />
                 <div className="text-xs">
                   <p>$25 Cdn/year</p>
-                  <p className="text-gray-500">Billed once for the first year</p>
+                  <p className="text-gray-500">
+                    Billed once for the first year
+                  </p>
                 </div>
               </div>
             </fieldset>
-            <button className="bg-black text-white p-2 w-full mt-5">Subscribe Now</button>
-            <div className="flex flex-row justify-center mt-5 gap-10">
+            <button className="w-full p-2 mt-5 text-white bg-black">
+              Subscribe Now
+            </button>
+            <div className="flex flex-row justify-center gap-10 mt-5">
               <Image src={VISAIcon} alt="visa" className="w-7" />
               <Image src={MasterCardIcon} alt="mastercard" className="w-7" />
               <Image src={AmexIcon} alt="amex" className="w-7" />
@@ -56,15 +62,18 @@ export default function SubscribePage() {
             <p className="mt-5 text-sm text-center">Cancel or pause anytime.</p>
           </div>
 
-          <p className="text-xs mt-10 text-gray-500 mx-4 my-3 lg:mx-20 xl:mx-40">
-            Offer for The Yonge Street Journal All Access subscription; current subscribers not
-            eligible. Subscription excludes print edition. For a monthly subscription, your payment
-            method will automatically be charged in advance the introductory offer rate every 4
-            weeks for 1 year, and after 1 year the standard rate every 4 weeks. For an annual
-            subscription, your payment method will automatically be charged in advance the
-            introductory offer rate for 1 year, and after 1 year the standard rate once yearly. Your
-            subscription will continue until you cancel. Cancellation takes effect at the end of
-            your current billing period. Taxes may apply. Offer terms are subject to change.
+          <p className="mx-4 my-3 mt-10 text-xs text-gray-500 lg:mx-20 xl:mx-40">
+            Offer for The Yonge Street Journal All Access subscription; current
+            subscribers not eligible. Subscription excludes print edition. For a
+            monthly subscription, your payment method will automatically be
+            charged in advance the introductory offer rate every 4 weeks for 1
+            year, and after 1 year the standard rate every 4 weeks. For an
+            annual subscription, your payment method will automatically be
+            charged in advance the introductory offer rate for 1 year, and after
+            1 year the standard rate once yearly. Your subscription will
+            continue until you cancel. Cancellation takes effect at the end of
+            your current billing period. Taxes may apply. Offer terms are
+            subject to change.
           </p>
         </div>
       </div>

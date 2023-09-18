@@ -16,23 +16,33 @@ export const metadata = {
   description: "Fair and Balanced News in Canada",
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const articles = await getLocalArticles();
-  const categories = [...new Set(articles.map((article) => article.category))].sort();
+  const categories = [
+    ...new Set(articles.map((article) => article.category)),
+  ].sort();
   return (
     <html lang="en" className={work_sans.className}>
       <body>
         <Header />
         {/* Laptop: Sections */}
         <div className="mx-2 lg:mx-20 xl:mx-40">
-          <div className="hidden lg:flex flex-row gap-8 justify-center text-xs my-3">
+          <div className="flex-row justify-center hidden gap-8 my-3 text-xs lg:flex">
             {categories.map((section, idx) => (
-              <Link key={idx} href={section.toLowerCase()} className="cursor-pointer">
+              <Link
+                key={idx}
+                href={section.toLowerCase()}
+                className="cursor-pointer"
+              >
                 {section.toUpperCase()}
               </Link>
             ))}
           </div>
-          <div className="border-double border-t-8"></div>
+          <div className="border-t-8 border-double"></div>
         </div>
         {children}
         <BottomNav />
