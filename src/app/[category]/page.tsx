@@ -1,5 +1,5 @@
-import ArticleGrid from "@/app/components/article-grid";
-import SectionTitle from "@/app/components/section-title";
+import ArticleGrid from "@/components/article-grid";
+import SectionTitle from "@/components/section-title";
 import { getArticlesByCategory } from "@/app/services/articles";
 import { FirstCharUpperCase } from "@/app/services/utils";
 

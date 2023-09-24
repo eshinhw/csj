@@ -13,7 +13,7 @@ export default function BottomNav() {
         <div className="w-9/12">
           <div className="flex justify-evenly">
             <div>
-              <div className="uppercase font-bold">NEWS</div>
+              <div className="font-bold uppercase">NEWS</div>
               <div className="flex flex-col text-sm cursor-pointer">
                 <a>Home Page</a>
                 <a>World</a>
@@ -25,7 +25,7 @@ export default function BottomNav() {
               </div>
             </div>
             <div>
-              <div className="uppercase font-bold">OPINION</div>
+              <div className="font-bold uppercase">OPINION</div>
               <div className="flex flex-col text-sm">
                 <a>Columnists</a>
                 <a>Editorials</a>
@@ -34,7 +34,7 @@ export default function BottomNav() {
               </div>
             </div>
             <div>
-              <div className="uppercase font-bold">ARTS</div>
+              <div className="font-bold uppercase">ARTS</div>
               <div className="flex flex-col text-sm">
                 <a>Books</a>
                 <a>Music</a>
@@ -42,7 +42,7 @@ export default function BottomNav() {
               </div>
             </div>
             <div>
-              <div className="uppercase font-bold">LIVING</div>
+              <div className="font-bold uppercase">LIVING</div>
               <div className="flex flex-col text-sm">
                 <a>Automative</a>
                 <a>Games</a>
@@ -50,7 +50,7 @@ export default function BottomNav() {
               </div>
             </div>
             <div>
-              <div className="uppercase font-bold">MORE</div>
+              <div className="font-bold uppercase">MORE</div>
               <div className="flex flex-col text-sm">
                 <a>Reader Centre</a>
                 <a>Cooking</a>
@@ -65,7 +65,7 @@ export default function BottomNav() {
         {/* right section */}
         <div className="w-3/12 ml-4">
           <div className="flex flex-col">
-            <div className="border-double border-b-4">
+            <div className="border-b-4 border-double">
               <div className="flex flex-col">
                 <div className="font-bold">SUBSCRIBE</div>
                 <div className="flex items-center gap-2">

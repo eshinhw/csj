@@ -1,5 +1,5 @@
 import React from "react";
-import { getLocalArticles } from "../services/articles";
+import { getLocalArticles } from "../app/services/articles";
 import ArticleCard from "./article-card";
 import MultiCarousel from "./multi-carousel";
 import SectionTitle from "./section-title";

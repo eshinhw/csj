@@ -1,4 +1,4 @@
-import { articles } from "../../../data/articles";
+import { articles } from "../../data/articles";
 
 export type Article = {
   id: string;

@@ -1,4 +1,5 @@
-import SmallHeader from "@/app/components/small-header";
+import Footer from "@/components/footer";
+import SmallHeader from "@/components/small-header";
 import "../../globals.css";
 
 export const metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <SmallHeader />
         {children}
+        <Footer />
       </body>
     </html>
   );
