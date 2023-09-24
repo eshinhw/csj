@@ -13,7 +13,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "static01.nyt.com",
-      }
+      },
+      {
+        protocol: "http",
+        hostname: "cdn.weatherapi.com",
+      },
     ],
   },
 };
