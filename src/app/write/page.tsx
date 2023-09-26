@@ -1,6 +1,5 @@
 "use client";
 
-import { Article } from "@/app/services/articles";
 import React, { useEffect, useState } from "react";
 
 export default function WritePage() {
@@ -12,20 +11,18 @@ export default function WritePage() {
   const [category, setCategory] = useState("");
 
   useEffect(() => {
-    const fetchArticles = async () => {
-      const response = await fetch("/api/articles");
-      const articles = await response.json();
-      const categories = [
-        ...new Set(articles.map((article: Article) => article.category)),
-      ].sort();
-      setCategories(categories as string[]);
-    };
-
-    fetchArticles();
+    // const fetchArticles = async () => {
+    //   const response = await fetch("/api/articles");
+    //   const articles = await response.json();
+    //   const categories = [
+    //     ...new Set(articles.map((article: Article) => article.category)),
+    //   ].sort();
+    //   setCategories(categories as string[]);
+    // };
+    // fetchArticles();
   }, []);
 
   const submitArticleHandler = async () => {
-    console.log(title);
     try {
       const response = await fetch("/api/articles", {
         method: "POST", // or 'PUT'
