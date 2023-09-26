@@ -22,7 +22,7 @@ export default function Weather() {
         <div className="flex gap-3 item-center">
           <Image
             src={conditionIcon}
-            alt=""
+            alt="weather"
             width={64}
             height={64}
             className="w-5 h-5"

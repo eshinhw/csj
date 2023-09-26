@@ -26,7 +26,7 @@ export default function BottomNav() {
             </div>
             <div>
               <div className="font-bold uppercase">OPINION</div>
-              <div className="flex flex-col text-sm">
+              <div className="flex flex-col text-sm cursor-pointer">
                 <a>Columnists</a>
                 <a>Editorials</a>
                 <a>Letters</a>
@@ -35,7 +35,7 @@ export default function BottomNav() {
             </div>
             <div>
               <div className="font-bold uppercase">ARTS</div>
-              <div className="flex flex-col text-sm">
+              <div className="flex flex-col text-sm cursor-pointer">
                 <a>Books</a>
                 <a>Music</a>
                 <a>Movies</a>
@@ -43,7 +43,7 @@ export default function BottomNav() {
             </div>
             <div>
               <div className="font-bold uppercase">LIVING</div>
-              <div className="flex flex-col text-sm">
+              <div className="flex flex-col text-sm cursor-pointer">
                 <a>Automative</a>
                 <a>Games</a>
                 <a>Education</a>
@@ -51,7 +51,7 @@ export default function BottomNav() {
             </div>
             <div>
               <div className="font-bold uppercase">MORE</div>
-              <div className="flex flex-col text-sm">
+              <div className="flex flex-col text-sm cursor-pointer">
                 <a>Reader Centre</a>
                 <a>Cooking</a>
                 <a>Graphics</a>
@@ -68,25 +68,25 @@ export default function BottomNav() {
             <div className="border-b-4 border-double">
               <div className="flex flex-col">
                 <div className="font-bold">SUBSCRIBE</div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 cursor-pointer">
                   <TbTruckDelivery />
                   <a>Home Delivery</a>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 cursor-pointer">
                   <BiMailSend />
                   <a>Digital Subscriptions</a>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 cursor-pointer">
                   <TbDeviceGamepad2 />
                   <a>Games</a>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 cursor-pointer">
                   <TbCooker />
                   <a>Cooking</a>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col cursor-pointer">
               <a>Mobile Applications</a>
               <a>International</a>
               <a>U.S.</a>

@@ -84,7 +84,7 @@ export default function Header() {
   return (
     <>
       {/* Mobile Top Bar */}
-      <div className="flex flex-row items-center justify-between my-3 mx-2 lg:hidden">
+      <div className="flex flex-row items-center justify-between mx-2 my-3 lg:hidden">
         <GiHamburgerMenu className="w-4 h-4" />
         <span className="text-xl lg:text-3xl">
           <Link href="/" className={fell_french.className}>
@@ -96,21 +96,21 @@ export default function Header() {
         </Link>
       </div>
       {/* Mobile Date and Subscribe */}
-      <div className="flex border-solid border-t-2 text-sm justify-between mx-2 lg:hidden">
-        <div className="text-xs py-2">
+      <div className="flex justify-between mx-2 text-sm border-t-2 border-solid lg:hidden">
+        <div className="py-2 text-xs">
           {getDay()}, {getMonth()} {now.getDate()}, {now.getFullYear()}
         </div>
-        <Link href="/write" className="text-xs py-2">
+        <Link href="/write" className="py-2 text-xs">
           Write
         </Link>
-        <Link href="/subscribe" className="text-xs py-2">
+        <Link href="/subscribe" className="py-2 text-xs">
           Subsribe
         </Link>
       </div>
 
       {/* Laptop Top Bar */}
-      <div className="hidden my-5 lg:mx-20 xl:mx-40 lg:flex flex-row items-center justify-between">
-        <div className="flex flex-row gap-4 justify-center items-center">
+      <div className="flex-row items-center justify-between hidden my-5 lg:mx-20 xl:mx-40 lg:flex">
+        <div className="flex flex-row items-center justify-center gap-4">
           <GiHamburgerMenu className="w-6 h-6 cursor-pointer" />
           <RxMagnifyingGlass
             className="w-6 h-6 cursor-pointer"
@@ -120,20 +120,20 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
-          <Link href="/write" className="uppercase border-black">
+          <Link href="/write" className="border-black ">
             Write
           </Link>
-          <Link href="/subscribe" className="uppercase border-black">
+          <Link href="/subscribe" className="border-black ">
             Subscribe
           </Link>
-          <Link href="/login" className="uppercase">
+          <Link href="/login" className="">
             Log In
           </Link>
         </div>
       </div>
 
       {/* Laptop Date, Header, Weather  */}
-      <div className="hidden lg:mx-20 xl:mx-40 lg:flex border-b-2 py-10 justify-between items-center">
+      <div className="items-center justify-between hidden py-10 border-b-2 lg:mx-20 xl:mx-40 lg:flex">
         {/* Date */}
         <div className="text-xs w-18">
           <p className="font-bold">
@@ -142,7 +142,7 @@ export default function Header() {
           <p>{getDay()}</p>
         </div>
         {/* Title */}
-        <div className="lg:text-3xl xl:text-6xl cursor-pointer text-center">
+        <div className="text-center cursor-pointer lg:text-3xl xl:text-6xl">
           <Link href="/" className={fell_french.className}>
             The Yonge Street Journal
           </Link>
