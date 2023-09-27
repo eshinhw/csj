@@ -51,6 +51,10 @@ export default async function getTopHeadlines() {
 
 // articles by category
 export async function getArticlesByCategory(category: string) {
+  /**
+   * Get articles in the given category parameter
+   * @param {string} category - the category of articles
+   */
   let url = `https://newsapi.org/v2/top-headlines?country=ca&category=${category}&sortBy=popularity&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI}`;
   const res = await fetch(url);
   if (!res.ok) {
