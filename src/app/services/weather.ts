@@ -1,6 +1,6 @@
 export default async function getCurrentWeather() {
   let url =
-    "http://api.weatherapi.com/v1" +
+    "https://api.weatherapi.com/v1" +
     "/current.json?" +
     "key=" +
     process.env.NEXT_PUBLIC_WEATHERAPI +
