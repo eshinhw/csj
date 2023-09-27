@@ -1,3 +1,7 @@
+/**
+ * Get current weather data from WeatherAPI
+ * @returns
+ */
 export default async function getCurrentWeather() {
   let url =
     "https://api.weatherapi.com/v1" +
@@ -6,7 +10,6 @@ export default async function getCurrentWeather() {
     process.env.NEXT_PUBLIC_WEATHERAPI +
     "&" +
     "q=Toronto";
-  console.log(url);
   const res = await fetch(url);
   if (!res.ok) {
     throw new Error("Failed to fetch weather data");
