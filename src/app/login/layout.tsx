@@ -1,5 +1,5 @@
 import SmallHeader from "@/components/small-header";
-import "../../globals.css";
+import "../globals.css";
 
 export const metadata = {
   title: "The Yonge Street Journal",
