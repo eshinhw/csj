@@ -37,11 +37,10 @@
 //   }
 // }
 
-const APIKEY = "676071ea907843b9b14522923aa63c1a";
-
 // all articles
 export default async function getTopHeadlines() {
-  let url = `https://newsapi.org/v2/top-headlines?country=ca&sortBy=popularity&apiKey=${APIKEY}`;
+  let url = `https://newsapi.org/v2/top-headlines?country=ca&sortBy=popularity&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI}`;
+  console.log(url);
   const res = await fetch(url);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -52,7 +51,7 @@ export default async function getTopHeadlines() {
 
 // articles by category
 export async function getArticlesByCategory(category: string) {
-  let url = `https://newsapi.org/v2/top-headlines?country=ca&category=${category}&sortBy=popularity&apiKey=${APIKEY}`;
+  let url = `https://newsapi.org/v2/top-headlines?country=ca&category=${category}&sortBy=popularity&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI}`;
   const res = await fetch(url);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
