@@ -11,7 +11,7 @@ const fell_french = IM_Fell_French_Canon_SC({
 
 export default function SmallHeader() {
   return (
-    <header className="text-center text-2xl my-5">
+    <header className="my-5 text-2xl text-center">
       <h1 className={fell_french.className}>The Yonge Street Journal</h1>
     </header>
   );

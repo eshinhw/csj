@@ -42,14 +42,17 @@
  * @returns
  */
 export default async function getTopHeadlines() {
-  let url = `https://newsapi.org/v2/top-headlines?country=ca&sortBy=popularity&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI}`;
-  console.log(url);
-  const res = await fetch(url);
+  let url = new URL("https://newsapi.org/v2/top-headlines");
+  url.searchParams.append("country", "ca");
+  url.searchParams.append("sortBy", "popularity");
+  // let url = `https://newsapi.org/v2/top-headlines?country=ca&sortBy=popularity&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI}`;
+
+  const res = await fetch(url + `&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
-
-  return res.json();
+  const topHeadlinesData = await res.json();
+  console.log(topHeadlinesData);
 }
 
 /**

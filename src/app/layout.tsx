@@ -1,9 +1,8 @@
-import BottomNav from "@/components/bottom-nav";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import BottomNav from "@/app/components/bottom-nav";
+import Footer from "@/app/components/footer";
+import Header from "@/app/components/header";
 import "./globals.css";
 import { Work_Sans } from "next/font/google";
-import CategorySection from "@/components/category-section";
 
 const work_sans = Work_Sans({
   subsets: ["latin"],
@@ -24,7 +23,6 @@ export default async function RootLayout({
     <html lang="en" className={work_sans.className}>
       <body>
         <Header />
-        <CategorySection />
         {children}
         <BottomNav />
         <Footer />

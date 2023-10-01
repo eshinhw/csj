@@ -1,5 +1,4 @@
 import React from "react";
-// import { Article } from "../app/services/articles";
 import { link } from "fs";
 import ArticleCard from "./article-card";
 
