@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hello World",
+  title: "Yonge Street Journal",
 };
 
 export default function HomePage() {
