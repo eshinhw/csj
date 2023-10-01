@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function SectionTitle({ title }: { title: string }) {
-  return <h1 className="text-2xl font-bold my-5">{title}</h1>;
+  return <h1 className="my-5 text-2xl font-bold">{title}</h1>;
 }

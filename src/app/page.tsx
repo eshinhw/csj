@@ -1,6 +1,9 @@
-import FeaturedArticles from "../components/featured-articles";
-import CarouselArticles from "../components/carousel";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hello World",
+};
 
 export default function HomePage() {
-  return <></>;
+  return;
 }

@@ -1,4 +1,4 @@
-import SmallHeader from "@/components/small-header";
+import SmallHeader from "@/app/components/small-header";
 import "../globals.css";
 
 export const metadata = {

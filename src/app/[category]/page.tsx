@@ -1,5 +1,5 @@
 import ArticleGrid from "@/components/article-grid";
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/app/components/section-title";
 import { FirstCharUpperCase } from "@/app/services/utils";
 
 export type Props = {
