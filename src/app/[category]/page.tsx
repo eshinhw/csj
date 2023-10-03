@@ -1,6 +1,5 @@
-import ArticleGrid from "@/components/article-grid";
-import SectionTitle from "@/app/components/section-title";
-import { FirstCharUpperCase } from "@/app/services/utils";
+import ArticleLayout from "@/components/article-layout";
+import { getArticlesByCategory } from "../services/articles";
 
 export type Props = {
   params: {
@@ -9,11 +8,11 @@ export type Props = {
 };
 
 export default async function CategoryPage({ params }: Props) {
-  // const articles = getArticlesByCategory(params.category);
+  const articlesData = await getArticlesByCategory(params.category);
+  const articles = articlesData.articles;
   return (
     <section className="mx-2 my-4 lg:mx-20 xl:mx-40">
-      <SectionTitle title={FirstCharUpperCase(params.category)} />
-      {/* <ArticleGrid articles={articles} /> */}
+      <ArticleLayout articles={articles} />
     </section>
   );
 }

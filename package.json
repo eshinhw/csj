@@ -21,6 +21,7 @@
     "react-icons": "^4.8.0",
     "react-markdown": "^8.0.6",
     "react-multi-carousel": "^2.8.3",
+    "react-responsive-carousel": "^3.2.23",
     "remark-gfm": "^3.0.1",
     "typescript": "5.0.3"
   },
