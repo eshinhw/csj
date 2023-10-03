@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import getTopHeadlines, {
   getLatestArticlesInCanada,
 } from "./services/articles";
-import SectionTitle from "../components/section-title";
-import Link from "next/link";
-import Image from "next/image";
-import { Carousel } from "react-responsive-carousel";
+
 import VerticalCarousel from "@/components/vertical-carousel";
 import ArticleLayout from "@/components/article-layout";
 
