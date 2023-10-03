@@ -112,7 +112,7 @@ export default function Header() {
           Write
         </Link>
         <Link href="/subscribe" className="py-2 text-xs">
-          Subsribe
+          <button>Subsribe</button>
         </Link>
       </div>
 
@@ -131,11 +131,11 @@ export default function Header() {
           {/* <Link href="/write" className="border-black ">
             Write
           </Link> */}
-          <Link href="/subscribe" className="border-black ">
-            Subscribe
+          <Link href="/subscribe" className="">
+            <button className="px-2 text-white bg-sky-600">Subsribe</button>
           </Link>
           <Link href="/login" className="">
-            Log In
+            <button className="px-2">Sign In</button>
           </Link>
         </div>
       </div>
