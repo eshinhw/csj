@@ -1,6 +1,6 @@
-import BottomNav from "@/app/components/bottom-nav";
-import Footer from "@/app/components/footer";
-import Header from "@/app/components/header";
+import BottomNav from "@/components/bottom-nav";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import "./globals.css";
 import { Work_Sans } from "next/font/google";
 
