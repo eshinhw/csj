@@ -17,7 +17,6 @@ export default async function HomePage() {
   const topHeadlinesData = await getTopHeadlines();
   const canadaArticlesData = await getLatestArticlesInCanada();
   const headlineArticles = topHeadlinesData.articles;
-  // console.log(headlineArticles);
   const canadaArticles = canadaArticlesData.articles;
   return (
     <div className="mx-2 lg:mx-20 xl:mx-40">
