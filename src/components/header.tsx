@@ -128,9 +128,9 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex lg:flex-row lg:gap-4">
-          <Link href="/write" className="border-black ">
+          {/* <Link href="/write" className="border-black ">
             Write
-          </Link>
+          </Link> */}
           <Link href="/subscribe" className="border-black ">
             Subscribe
           </Link>
