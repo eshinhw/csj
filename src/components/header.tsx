@@ -99,7 +99,7 @@ export default function Header() {
             The Yonge Street Journal
           </Link>
         </span>
-        <Link href="/login">
+        <Link href="/signin">
           <FaUser className="w-4 h-4" />
         </Link>
       </div>
@@ -134,7 +134,7 @@ export default function Header() {
           <Link href="/subscribe" className="">
             <button className="px-2 text-white bg-sky-600">Subsribe</button>
           </Link>
-          <Link href="/login" className="">
+          <Link href="/signin" className="">
             <button className="px-2">Sign In</button>
           </Link>
         </div>
