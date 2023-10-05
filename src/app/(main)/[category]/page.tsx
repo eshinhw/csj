@@ -1,5 +1,5 @@
 import ArticleLayout from "@/components/article-layout";
-import { getArticlesByCategory } from "../services/articles";
+import { getArticlesByCategory } from "../../services/articles";
 
 export type Props = {
   params: {

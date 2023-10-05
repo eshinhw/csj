@@ -1,10 +1,11 @@
 import { IM_Fell_French_Canon_SC } from "next/font/google";
-import VISAIcon from "../../../public/images/icons/visa.png";
-import MasterCardIcon from "../../../public/images/icons/mastercard.png";
-import AmexIcon from "../../../public/images/icons/amex.png";
-import GooglePayIcon from "../../../public/images/icons/googlepay.png";
-import ApplePayIcon from "../../../public/images/icons/applepay.png";
-import StripeIcon from "../../../public/images/icons/stripe.png";
+
+import VISAIcon from "../../../../public/images/icons/visa.png";
+import MasterCardIcon from "../../../../public/images/icons/mastercard.png";
+import AmexIcon from "../../../../public/images/icons/amex.png";
+import GooglePayIcon from "../../../../public/images/icons/googlepay.png";
+import ApplePayIcon from "../../../../public/images/icons/applepay.png";
+import StripeIcon from "../../../../public/images/icons/stripe.png";
 import Image from "next/image";
 
 const fell_french = IM_Fell_French_Canon_SC({

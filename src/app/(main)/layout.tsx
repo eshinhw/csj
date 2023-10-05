@@ -1,7 +1,8 @@
 import BottomNav from "@/components/bottom-nav";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import "./globals.css";
+import "../globals.css";
+// import "./globals.css";
 import { Work_Sans } from "next/font/google";
 
 const work_sans = Work_Sans({

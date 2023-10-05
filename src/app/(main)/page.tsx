@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import getTopHeadlines, {
   getLatestArticlesInCanada,
-} from "./services/articles";
+} from "../services/articles";
 
 import VerticalCarousel from "@/components/vertical-carousel";
 import ArticleLayout from "@/components/article-layout";
