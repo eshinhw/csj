@@ -108,9 +108,6 @@ export default function Header() {
         <div className="py-2 text-xs">
           {getDay()}, {getMonth()} {now.getDate()}, {now.getFullYear()}
         </div>
-        <Link href="/write" className="py-2 text-xs">
-          Write
-        </Link>
         <Link href="/subscribe" className="py-2 text-xs">
           <button>Subsribe</button>
         </Link>
