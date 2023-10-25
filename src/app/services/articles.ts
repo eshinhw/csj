@@ -33,14 +33,12 @@ export async function getArticlesByCategory(category: string) {
 export async function getLatestArticlesInCanada() {
   const today = new Date();
   const targetDate = new Date(today.setDate(today.getDate() - 3));
-  console.log(targetDate.toISOString().slice(0, 10));
-
   let url = new URL("https://newsapi.org/v2/everything");
-  url.searchParams.append("from", targetDate);
+  url.searchParams.append("from", targetDate.toString());
   url.searchParams.append("language", "en");
   url.searchParams.append("q", "Canada");
   url.searchParams.append("sortBy", "popularity");
-  url.searchParams.append("apiKey", process.env.NEXT_PUBLIC_NEWSAPI);
+  url.searchParams.append("apiKey", process.env.NEXT_PUBLIC_NEWSAPI!);
   const res = await fetch(url);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
