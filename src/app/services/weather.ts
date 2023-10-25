@@ -3,14 +3,10 @@
  * @returns
  */
 export default async function getCurrentWeather() {
-  let url =
-    "https://api.weatherapi.com/v1" +
-    "/current.json?" +
-    "key=" +
-    process.env.NEXT_PUBLIC_WEATHERAPI +
-    "&" +
-    "q=Toronto";
-  const res = await fetch(url);
+  let myURL = new URL("https://api.weatherapi.com/v1/current.json");
+  myURL.searchParams.append("key", process.env.NEXT_PUBLIC_WEATHERAPI);
+  myURL.searchParams.append("q", "Toronto");
+  const res = await fetch(myURL);
   if (!res.ok) {
     throw new Error("Failed to fetch weather data");
   }
