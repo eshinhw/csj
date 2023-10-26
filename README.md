@@ -15,10 +15,10 @@
 
 ## Objectives
 
-- Build a website using the functionalities of Next.js with TypeScript and Tailwind CSS
-- Practice frontend implementation with HTML/CSS by cloning the frontend design of [The New York Times](https://www.nytimes.com)
-- Display real news data by integrating [News API](https://newsapi.org)
-- Display local weather data by integrating [Weather API](https://www.weatherapi.com)
+- Build a website using the functionalities of Next.js with TypeScript and Tailwind CSS.
+- Practice frontend implementation with HTML/CSS by cloning the frontend design of [The New York Times](https://www.nytimes.com).
+- Display real news data by integrating [News API](https://newsapi.org).
+- Display local weather data by integrating [Weather API](https://www.weatherapi.com).
 
 ## Tech Stack
 
