@@ -17,7 +17,7 @@ An online journal app where users discover stories, ideas and expertise from wri
 
 <div align="center">
   
-  <img width="1200" alt="main-page" src="https://github.com/eshinhw/ysj/assets/41933169/bd3d7b64-7061-4580-b668-b6a157da73f8">
+  <img width="1200" alt="main-page" src="https://github.com/eshinhw/ysj/assets/41933169/f1339fd2-4668-41c5-b5c3-f4c5db491542">
 
 </div>
 
