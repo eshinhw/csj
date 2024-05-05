@@ -23,7 +23,6 @@
 ## Tech Stack
 
 - TypeScript
-- React
 - Next.js
 - Tailwind CSS
 
